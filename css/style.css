@@ -27,6 +27,12 @@ h1, h2, strong {
     margin-bottom: 0;
 }
 
+.section-title {
+    font-size: 1.125rem;
+    color: #000;
+    margin-top: 1.25em;
+}
+
 /* buttons */
 
 .btn {
@@ -43,17 +49,38 @@ h1, h2, strong {
 }
 
 /* ===================
+    general layout
+====================== */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+/* ===================
     hero area
 ====================== */
 
+
 .hero {
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
     background-color: black;
     padding: 4em 0;
     color: #fff;
 }
 
 .hero > * {
+    grid-column: 2 / -2;
+}
+
+/* ===================
+    info area
+====================== */
+
+.info {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.col-1 {
     grid-column: 2 / -2;
 }
