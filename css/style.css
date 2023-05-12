@@ -101,7 +101,6 @@ h1, h2, strong {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 2px solid red;
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -139,6 +138,29 @@ h1, h2, strong {
     padding: .5em;
     margin-left: auto;
     font-size: 1.5em;
+}
+
+@media (min-width: 600px) {
+    .open-nav,
+    .close-nav {
+        display: none;
+    }
+
+    .nav {
+        position: initial;
+    }
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .nav-item {
+        margin-left: 2em;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
 }
 /* footer */
 
